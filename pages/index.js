@@ -23,4 +23,5 @@ Home.getInitialProps = async ()=>{
     data: _.data
   };
 }
+console.clear()
 export default Home
