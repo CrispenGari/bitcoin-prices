@@ -1,0 +1,40 @@
+.main {
+}
+.main > h1 {
+  font-weight: 500 !important;
+  font-size: 20px !important;
+  margin-top: 20px;
+  text-align: center;
+}
+label.label {
+  text-align: center !important;
+}
+.select,
+.form__wraper {
+  width: 100% !important;
+  margin: auto !important;
+  max-width: 400px !important;
+}
+.infomation {
+  margin-top: 10px;
+}
+.list_item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  align-items: center !important;
+}
+.badge {
+  padding: 5px 10px !important;
+  border-radius: 5px !important;
+  display: flex !important;
+}
+.count_up {
+  margin-right: 5px !important;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif !important;
+}

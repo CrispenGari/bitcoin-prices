@@ -1,9 +1,10 @@
-import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+
 import {Header, Main} from '../Components'
+import Head from 'next/head'
 import axios from 'axios'
-const Home=(props)=> {
-  return (
+import styles from './../styles/About.module.css'
+const About =(props)=>{
+    return <>
     <div className={styles.container}>
       <Head>
         <title>Bitcoin</title>
@@ -15,12 +16,12 @@ const Home=(props)=> {
        <Main data={props?.data}/>
      </div>
     </div>
-  )
+    </>
 }
-Home.getInitialProps = async ()=>{
-  const _ = await axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
-  return {
-    data: _.data
-  };
-}
-export default Home
+About.getInitialProps = async ()=>{
+    const _ = await axios.get('https://api.coindesk.com/v1/bpi/currentprice.json')
+    return {
+      data: _.data
+    };
+  }
+export default About

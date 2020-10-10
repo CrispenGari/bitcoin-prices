@@ -1,0 +1,30 @@
+.header {
+  background: black !important;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.header__left > img {
+  width: 50px !important;
+  cursor: pointer;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+}
+.header__right > h1 {
+  font-weight: 500;
+  font-size: 15px;
+  cursor: pointer;
+}
+.header__right > h1:last-child {
+  margin-left: 10px;
+}
+.a_tag {
+  text-decoration: none !important;
+}
+.active {
+  color: blue !important;
+}
