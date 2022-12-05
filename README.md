@@ -1,30 +1,50 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+### bitcoin-prices
 
-## Getting Started
+This is a very simple we application for checking `bitcoin` prices from an api.
 
-First, run the development server:
+### API url
 
-```bash
-npm run dev
-# or
-yarn dev
+The url to get the `bitcoin` prices is:
+
+```shell
+https://api.coindesk.com/v1/bpi/currentprice.json
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### API data
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+The data from an `api` looks as follows:
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```json
+{
+  "time": {
+    "updated": "Dec 5, 2022 08:58:00 UTC",
+    "updatedISO": "2022-12-05T08:58:00+00:00",
+    "updateduk": "Dec 5, 2022 at 08:58 GMT"
+  },
+  "disclaimer": "This data was produced from the CoinDesk Bitcoin Price Index (USD). Non-USD currency data converted using hourly conversion rate from openexchangerates.org",
+  "chartName": "Bitcoin",
+  "bpi": {
+    "USD": {
+      "code": "USD",
+      "symbol": "&#36;",
+      "rate": "17,366.9829",
+      "description": "United States Dollar",
+      "rate_float": 17366.9829
+    },
+    "GBP": {
+      "code": "GBP",
+      "symbol": "&pound;",
+      "rate": "14,511.7120",
+      "description": "British Pound Sterling",
+      "rate_float": 14511.712
+    },
+    "EUR": {
+      "code": "EUR",
+      "symbol": "&euro;",
+      "rate": "16,917.9769",
+      "description": "Euro",
+      "rate_float": 16917.9769
+    }
+  }
+}
+```
